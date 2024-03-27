@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Jan Vidar Krey <janvidar@extatic.org>
 Build-Depends: debhelper (>= 7.0.0)
-Standards-Version: 3.8.3.0
+Standards-Version: 4.6.0.1
 
 Package: uhub
 Architecture: any
