@@ -1,7 +1,7 @@
- ##
+##
 ## Makefile for uhub
 ## Copyright (C) 2007-2013, Jan Vidar Krey <janvidar@extatic.org>
- #
+#
 
 cmake_minimum_required (VERSION 2.8.2)
 
@@ -18,7 +18,7 @@ set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/Modules)
 option(RELEASE "Release build, debug build if disabled" ON)
 option(LOWLEVEL_DEBUG, "Enable low level debug messages." OFF)
 option(SSL_SUPPORT "Enable SSL support" ON)
-option(USE_OPENSSL "Use OpenSSL's SSL support" ON )
+option(USE_OPENSSL "Use OpenSSL's SSL support" ON)
 option(SYSTEMD_SUPPORT "Enable systemd notify and journal logging" OFF)
 option(ADC_STRESS "Enable the stress tester client" OFF)
 
@@ -26,7 +26,7 @@ find_package(Git)
 find_package(Sqlite3)
 
 include(TestBigEndian)
-include(CheckSymbolExists) 
+include(CheckSymbolExists)
 include(CheckIncludeFile)
 include(CheckTypeSize)
 
