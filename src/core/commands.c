@@ -390,9 +390,9 @@ static int command_version(struct command_base* cbase, struct hub_user* user, st
 {
 	struct cbuffer* buf;
 	if (cbase->hub->config->show_banner_sys_info)
-		buf = cbuf_create_const("Powered by " PRODUCT_STRING " on " OPSYS "/" CPUINFO);
+		buf = cbuf_create_const("Powered by OpenWrt " PRODUCT_STRING " on " OPSYS "/" CPUINFO);
 	else
-		buf = cbuf_create_const("Powered by " PRODUCT_STRING);
+		buf = cbuf_create_const("Powered by OpenWrt " PRODUCT_STRING);
 	return command_status(cbase, user, cmd, buf);
 }
 
