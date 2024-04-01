@@ -931,9 +931,9 @@ void hub_set_variables(struct hub_info* hub, struct acl_handle* acl)
 	if (hub->command_banner)
 	{
 		if (hub->config->show_banner_sys_info)
-			tmp = adc_msg_escape("Powered by " PRODUCT_STRING " on " OPSYS "/" CPUINFO);
+			tmp = adc_msg_escape("DCRafaHUB " PRODUCT_STRING " on " OPSYS "/" CPUINFO);
 		else
-			tmp = adc_msg_escape("Powered by " PRODUCT_STRING);
+			tmp = adc_msg_escape("DCRafaHUB " PRODUCT_STRING);
 		adc_msg_add_argument(hub->command_banner, "000");
 		adc_msg_add_argument(hub->command_banner, tmp);
 		hub_free(tmp);
